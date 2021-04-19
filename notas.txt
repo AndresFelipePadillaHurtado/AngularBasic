@@ -1,0 +1,23 @@
+# Crear un modulo atraves de Angular cli
+    ng g m dbz 
+  sin banderas va a crear un nuevo directorio
+
+# Prevenir la recarga de la paguina en un formulario  
+    // importar el modulo FormsModule, en el archivo Module encargado
+    // agregar el ngSubmit con la funcion a realizar (ngSubmit)="agregar()"
+
+# Uso del ngModel en los inputs
+  ++ Para detectar un cambio en un input usamos (imput)="funcion()"
+  [ngModel] => Solo emitir el eveto
+  [(ngModel)] => Escuchar y emitir el evento
+
+# @imput Componentes hijos # Pasar informacion del Componente Padre al Componente hijo
+  -- Usar @imput => va en el Componente hijo
+  // Crear un nuevo Componente
+
+# Uso de @Outputs y EventEmitter
+  // EL @Output nos sirve para emitir informacion o un valor del hijo hacia el padre
+  Tambien se crea en el Componente hijo
+
+# Servicios
+  // Crear Servicio => ng g s + path
