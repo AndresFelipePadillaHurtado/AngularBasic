@@ -8,7 +8,7 @@ import { Personaje } from '../interfaces/dbz.interface';
 })
 export class DbzService {
 
-  personajes: Personaje[] = [
+  private _personajes: Personaje[] = [
     {
       nombre: 'Goku',
       poder: 1500
@@ -19,7 +19,15 @@ export class DbzService {
     }
   ];
 
-  constructor() { 
-    console.log('Servicio inicializado');
+  get personajes(): Personaje[] {
+    // Los 3 puntos es el operador Spread
+    // Separa cada uno de los elementos del arreglo y crea uno nuevo
+    return [...this._personajes];
+  }
+
+  constructor(){}
+
+  agregarPersonaje(arg: Personaje) {
+    this._personajes.push( arg );
   }
 }

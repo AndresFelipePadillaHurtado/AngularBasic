@@ -4,15 +4,9 @@
 
 <div class="row">
     <div class="col">
-
-        <!-- Relacionar la propiedad del hijo con una propiedad local "Padre" -->
-        <app-personajes [personajes]="personajes">
-        </app-personajes>
+        <app-personajes></app-personajes>
     </div>
     <div class="col">
-        <app-agregar 
-        [nuevo] = "nuevo"
-        (onNuevoPersonaje)="agregarNuevoPersonaje( $event )">
-        </app-agregar>
+        <app-agregar [nuevo] = "nuevo"></app-agregar>
     </div>
 </div>

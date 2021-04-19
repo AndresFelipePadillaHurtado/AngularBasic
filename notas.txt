@@ -21,3 +21,7 @@
 
 # Servicios
   // Crear Servicio => ng g s + path
+
+# Desplegar aplicacion de angular en nettlify // Build de  produccion
+  -- Generar la version de produccion
+  ng build --prod
